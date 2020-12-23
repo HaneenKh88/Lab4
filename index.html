@@ -8,9 +8,66 @@
 
 
 <body>
+
+    <script style="color: darkred; font-size: large; font: bold">
+
+        var name = prompt('please enter your name');
+        var time = prompt('please enter the time in your country');
+        
+        var Message;
+        if(9 <= time <= 21)
+{
+    var flower = prompt('enter the flower color that you want to order');
+
+    if (flower = 'red')
+       { 
+        Message = 'we have 3 types of red flower.';
+       }
+
+       if (flower = 'black')
+        {
+        Message = 'we have 1 type of black flower.';
+        }
+
+        if (flower = 'white')
+        {
+        Message = 'we have 10 type of white flower.';
+        }
+
+        else 
+
+        Message = 'out of stock.';
+
+
+}
+         else if(21 < time < 9)
+         Message = 'sorry our store is closed';
+
+         else 
+         Message = 'you have entered wrong time'
+
+
+
+         
+         document.write ('<p> hello ' + name + ' welcome to our store');
+        alert (Message);
+
+        
+        
+        
+        
+
+
+
+        
+
+        
+    </script>
 <header>
 
+
     <img src="https://th.bing.com/th/id/OIP.wHCqowAVUX8GoxvLMcDVQQHaHa?pid=Api&rs=1" alt="this is the logo" width="400" height="300">
+
     <nav>
         <ul>
             <li><a href="https://lina-yousef.github.io/Lab04/"> Home </a> </li>
