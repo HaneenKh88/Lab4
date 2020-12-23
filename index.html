@@ -9,48 +9,64 @@
 
 <body>
 
-    <script style="color: darkred; font-size: large; font: bold">
+    <script >
 
         var name = prompt('please enter your name');
         var time = prompt('please enter the time in your country');
         
         var Message;
-        if(9 <= time <= 21)
+
+        if(time > 9 && time <= 20)
 {
     var flower = prompt('enter the flower color that you want to order');
 
-    if (flower = 'red')
+    if (flower == 'red')
        { 
         Message = 'we have 3 types of red flower.';
        }
 
-       if (flower = 'black')
+       else if (flower == 'black')
         {
         Message = 'we have 1 type of black flower.';
         }
 
-        if (flower = 'white')
+        else if (flower == 'white')
         {
         Message = 'we have 10 type of white flower.';
         }
 
-        else 
+        else if (flower == '')
 
+        {Message = "error"; }
+
+        else 
+{
         Message = 'out of stock.';
+}
+
+
 
 
 }
-         else if(21 < time < 9)
-         Message = 'sorry our store is closed';
+
+         else if( time > 20)
+         
+        {  Message = 'sorry our store is closed'; alert (Message); }
+
+        else if (time < 9)
+
+        {Message = 'sorry our store is closed'; }
 
          else 
-         Message = 'you have entered wrong time'
+
+         { Message = 'you have entered wrong time'; }
 
 
 
          
          document.write ('<p> hello ' + name + ' welcome to our store');
-        alert (Message);
+            alert (Message);
+        
 
         
         
