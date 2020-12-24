@@ -11,7 +11,15 @@
 
     <script >
 
-        var name = prompt('please enter your name');
+        var name = prompt('please enter your name'); 
+        
+        while(name === '' || name === null)
+        {
+            name = prompt('please enter your name');
+        }
+
+        console.log (name);
+
         var time = prompt('please enter the time in your country');
         
         var Message;
@@ -25,20 +33,12 @@
         Message = 'we have 3 types of red flower.';
        }
 
-<<<<<<< HEAD
        else if (flower == 'black')
-=======
-       else if (flower = 'black')
->>>>>>> 28eaae63b92d386b7f3f105dba606e84ddceb200
         {
         Message = 'we have 1 type of black flower.';
         }
 
-<<<<<<< HEAD
         else if (flower == 'white')
-=======
-        else if (flower = 'white')
->>>>>>> 28eaae63b92d386b7f3f105dba606e84ddceb200
         {
         Message = 'we have 10 type of white flower.';
         }
@@ -51,8 +51,6 @@
 {
         Message = 'out of stock.';
 }
-
-
 
 
 }
@@ -68,30 +66,31 @@
          else 
 
          { Message = 'you have entered wrong time'; }
-
-
-
          
-         document.write ('<p> hello ' + name + ' welcome to our store');
+         document.write ('<p> hello ' + name + ' welcome to our store </p>');
             alert (Message);
         
+          document.write ('<p> <img src="https://th.bing.com/th/id/OIP.wHCqowAVUX8GoxvLMcDVQQHaHa?pid=Api&rs=1" alt="this is the logo" width="400" height="300"> </p> ');
 
-        
-        
-        
-        
+        var Photo = prompt('How many flower do you want?');
 
+         for(var i =1 ; i <= Photo ; i++)
+          {
 
-
+              document.write( '<p>' +  i + '</p>');
+              document.write('<p> <img src = "https://www.giftalove.com/blog/wp-content/uploads/2016/05/Colorful-Flowers-Arrangement.jpg" width="400" height="300" > </p>');
+         
+          }
+         /* var Rate = prompt('What star rating would you give, 1-5?');
+         Message = 'thank you for rating';*/
+         
         
-
         
     </script>
 <header>
 
 
-    <img src="https://th.bing.com/th/id/OIP.wHCqowAVUX8GoxvLMcDVQQHaHa?pid=Api&rs=1" alt="this is the logo" width="400" height="300">
-
+    
     <nav>
         <ul>
             <li><a href="https://lina-yousef.github.io/Lab04/"> Home </a> </li>
