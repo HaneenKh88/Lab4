@@ -3,99 +3,24 @@
 <head>
 
     <title> Pink Flower </title>
+    <link rel="stylesheet" href="CSS/Lab5.css">
+    <script src="JS/Lab7.js"></script>
+    
 
 </head>
 
 
 <body>
 
-    <script >
-
-        var name = prompt('please enter your name'); 
-        
-        while(name === '' || name === null)
-        {
-            name = prompt('please enter your name');
-        }
-
-        console.log (name);
-
-        var time = prompt('please enter the time in your country');
-        
-        var Message;
-
-        if(time > 9 && time <= 20)
-{
-    var flower = prompt('enter the flower color that you want to order');
-
-    if (flower == 'red')
-       { 
-        Message = 'we have 3 types of red flower.';
-       }
-
-       else if (flower == 'black')
-        {
-        Message = 'we have 1 type of black flower.';
-        }
-
-        else if (flower == 'white')
-        {
-        Message = 'we have 10 type of white flower.';
-        }
-
-        else if (flower == '')
-
-        {Message = "error"; }
-
-        else 
-{
-        Message = 'out of stock.';
-}
-
-
-}
-
-         else if( time > 20)
-         
-        {  Message = 'sorry our store is closed'; alert (Message); }
-
-        else if (time < 9)
-
-        {Message = 'sorry our store is closed'; }
-
-         else 
-
-         { Message = 'you have entered wrong time'; }
-         
-         document.write ('<p> hello ' + name + ' welcome to our store </p>');
-            alert (Message);
-        
-          document.write ('<p> <img src="https://th.bing.com/th/id/OIP.wHCqowAVUX8GoxvLMcDVQQHaHa?pid=Api&rs=1" alt="this is the logo" width="400" height="300"> </p> ');
-
-        var Photo = prompt('How many flower do you want?');
-
-         for(var i =1 ; i <= Photo ; i++)
-          {
-
-              document.write( '<p>' +  i + '</p>');
-              document.write('<p> <img src = "https://www.giftalove.com/blog/wp-content/uploads/2016/05/Colorful-Flowers-Arrangement.jpg" width="400" height="300" > </p>');
-         
-          }
-         /* var Rate = prompt('What star rating would you give, 1-5?');
-         Message = 'thank you for rating';*/
-         
-        
-        
-    </script>
 <header>
 
 
     
     <nav>
         <ul>
-            <li><a href="https://lina-yousef.github.io/Lab04/"> Home </a> </li>
-            <li><a href="https://haneenkh88.github.io/Lab4/."> About store </a> </li>
-            <li><a href="https://mohanadalomary.github.io/lab04/."> Our team </a></li>
+            <li class = "List1"><a href="https://lina-yousef.github.io/Lab04/"> Home </a> </li>
+            <li class = "List1"><a href="https://haneenkh88.github.io/Lab4/."> About store </a> </li>
+            <li class = "List1"><a href="https://mohanadalomary.github.io/lab04/."> Our team </a></li>
         
 
         </ul>
@@ -105,9 +30,9 @@
 </header>
 
 <main>
-    <h1 style="color: brown;"> about our store </h1>
+    <h1> about our store </h1>
 
-    <p>
+    <p id="p2">
         our store present to you different types of unique flowers around the world with the best prices.
     </p>
 

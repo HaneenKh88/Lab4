@@ -1,0 +1,41 @@
+body {
+  background-color:rgba(134, 25, 67, 0.8);
+}
+
+h1
+{
+  color: rgb(255, 255, 255); font-style: italic; font: bold; font-size: x-large ;
+}
+#p1
+{
+   color: whitesmoke; font-style: italic; font: bold; font-size: x-large ; background-color: rgba(26, 0, 10, 0.616) ; border:2px solid whitesmoke ; padding: 10px; margin: 4px; text-align: center;
+}
+
+#p2 
+{
+  color: rgb(255, 209, 209); font-style: italic; font: bold; font-size: x-large
+}
+
+
+a {
+  color: whitesmoke;
+}
+
+li
+{
+  
+  display: inline-block;
+  text-align: right;
+  float: right;
+  
+  
+}
+
+.List1
+{
+  
+  display: inline-block;
+  font-style: whitesmoke; font-style: italic; font: bold; font-size: large ; border:2px solid whitesmoke ; padding: 10px; margin: 4px; text-align: center;
+
+
+}
